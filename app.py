@@ -50,7 +50,7 @@ st.title('FBI Wanted List')
 
 
 st.subheader('Code')
-'Bovenaan een code die geschreven wordt is het overzichtelijk om aan te geven welke packages worden gebruikt om de code te laten uitvoeren. Bij het maken van deze blog zijn er zowel packages gebruikt voor het importen als het visualiseren van de data. In onderstaande afbeelding is te zien welke packages gebruikt zijn voor het maken van deze blog.'
+'Bovenaan een code die geschreven wordt is het overzichtelijk om aan te geven welke packages worden gebruikt om de code te laten uitvoeren. Bij het maken van deze blog zijn er zowel packages gebruikt voor het importen als het visualiseren van de data. In onderstaande code is te zien welke packages gebruikt zijn voor het maken van deze blog.'
 
 
 # In[8]:
