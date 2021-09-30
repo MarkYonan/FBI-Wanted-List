@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[25]:
 
 
 import pandas as pd 
@@ -9,6 +9,7 @@ import plotly.express as px
 import streamlit as st
 import plotly.graph_objects as go
 from PIL import Image
+import pipreqs
 
 df = pd.read_csv('wanted.csv')
 
@@ -41,10 +42,10 @@ st.subheader('Inleiding')
 'De afgelopen weken is de naam Gabby Petito vaak voorbij gekomen. Gabby Petito is een jonge vrouw van 22 jaar oud. Tijdens een roadtrip met haar vriend is ze vermist geraakt. Na een tijd als vermist persoon kwam op op 19 september 2021 het tragische nieuws dat haar stoffelijk overschot is gevonden in Bridger-Teton National Forest in Wyoming. Omdat dit ons aansprak is er gekeken of er een dataset bestaat in het teken van misdaad. Zo zijn we terecht gekomen bij een dataset van de FBI. De FBI heeft een API vrij gegeven met alle mensen die gezocht worden. Deze personen worden gezocht om verschillende redenen. Denk hierbij aan vermist zijn maar ook het plegen van een moord.'
 
 
-# In[6]:
+# In[1]:
 
 
-'In dit blog wordt keken naar mogelijke verbanden tussen de verschillende variabelen van de personen op de lijst van gezochte.'
+'In dit blog wordt gekeken naar mogelijke verbanden tussen de verschillende variabelen van de personen op de lijst van gezochte.'
 
 
 # In[7]:
