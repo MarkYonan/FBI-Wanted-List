@@ -78,7 +78,7 @@ with st.echo():
 with st.echo():
     response = requests.get('https://api.fbi.gov/wanted/v1/list')
     wanted = response.json()
-    {item:wanted['items'][0].get(item)for item in ['title', 'publication', 'reward_text']}
+    {item:wanted['items'][0].get(item) for item in ['title', 'publication', 'reward_text']}
 
 
 # In[11]:
