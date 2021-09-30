@@ -50,7 +50,7 @@ st.title('FBI Wanted List')
 
 
 st.subheader('Code')
-'Bovenaan een code die geschreven wordt is het overzichtelijk om aan te geven welke packages worden gebruikt om de code te laten uitvoeren. Bij het maken van deze blog zijn er zowel packages gebruikt voor het importen als het visualiseren van de data. In onderstaande code is te zien welke packages gebruikt zijn voor het maken van deze blog.'
+'Bovenaan een code die geschreven wordt is het overzichtelijk om aan te geven welke packages worden gebruikt om de code te laten uitvoeren. Bij het maken van deze blog zijn er zowel packages gebruikt voor het importen als het visualiseren van de data. In de onderstaande code is te zien welke packages gebruikt zijn voor het maken van deze blog.'
 
 
 # In[8]:
@@ -69,7 +69,7 @@ with st.echo():
 # In[9]:
 
 
-'Voordat de API van de FBI gebruikt kan worden moet deze geimporteerd worden in python zodat er mee gewerkt kan worden. Het bestand dat wordt binnengehaald zetten we om naar een JSON file . Een JSON file is makkelijker te inspecteren en aan te passen dan het originele bestand. In onderstaande code is te zien hoe de API ingeladen is.'
+'Voordat de API van de FBI gebruikt kan worden moet deze geimporteerd worden in python zodat er mee gewerkt kan worden. Het bestand dat wordt binnengehaald zetten we om naar een JSON file . Een JSON file is makkelijker te inspecteren en aan te passen dan het originele bestand. In onderstaande code is te zien hoe de API ingeladen is met een voorbeeld van hoe de data is geëxtraheerd.'
 
 
 # In[10]:
