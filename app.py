@@ -9,7 +9,6 @@ import plotly.express as px
 import streamlit as st
 import plotly.graph_objects as go
 from PIL import Image
-import pipreqs
 
 df = pd.read_csv('wanted.csv')
 
