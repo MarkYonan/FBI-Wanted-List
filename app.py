@@ -144,7 +144,7 @@ if female == True and male == False:
     st.plotly_chart(fig_female)
 
 if male == True and female == True:
-    st.error('SELECTEER EEN OPTIE')
+    st.error('SELECTEER ÉÉN OPTIE!!!!!')
 
 
 # #### ---
