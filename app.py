@@ -69,7 +69,7 @@ with st.echo():
 # In[9]:
 
 
-'Voordat de API van de FBI gebruikt kan worden moet deze geimporteerd worden in python zodat er mee gewerkt kan worden. Het bestand dat wordt binnengehaald zetten we om naar een JSON file . Een JSON file is makkelijker te inspecteren en aan te passen dan het originele bestand. In onderstaande code is te zien hoe de API ingeladen is met een voorbeeld van hoe de data is geëxtraheerd.'
+'Voordat de API van de FBI gebruikt kan worden moet deze geimporteerd worden in python zodat er mee gewerkt kan worden. Het bestand dat wordt binnengehaald zetten we om naar een JSON file . Een JSON file is makkelijker te inspecteren en aan te passen dan het originele bestand. In onderstaande code is te zien hoe de API ingeladen is met een voorbeeld van hoe de data is geëxtraheerd uit de API.'
 
 
 # In[10]:
