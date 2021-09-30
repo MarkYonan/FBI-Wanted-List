@@ -100,7 +100,7 @@ st.dataframe(df)
 
 
 st.subheader('1. Checkbox')
-'De checkbox heeft de mogelijkheid om aan te geven in hoeveel van de zaken de persoon in kwestie een man of een vrouw is. Door bijvoorbeeld op "Vrouw" klikken krijgt u een overzicht van de gevallen waar een vrouw de persoon in kwestie is.'
+'De checkbox heeft de mogelijkheid om aan te geven in hoeveel van de zaken de persoon in kwestie een man of een vrouw is. Door bijvoorbeeld op "Vrouw" te klikken krijgt u een overzicht van de gevallen waar een vrouw de persoon in kwestie is.'
 
 
 # In[14]:
