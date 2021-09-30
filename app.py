@@ -199,7 +199,7 @@ st.plotly_chart(fig2)
 
 
 st.subheader('3. Slider')
-'Een slider heeft de functie om op een bepaalde variabele geselecteerde waardes weer te geven. De slider in onderstaande grafiek geeft per geselecteerd jaar aan in welke staat het heeft plaatsgevonden en wat voor misdaad of ongeval zich daar heeft afgespeeld.'
+'Een slider heeft de functie om op een bepaalde variabele geselecteerde waardes weer te geven. De slider in onderstaande grafiek geeft per geselecteerd jaar aan in welke staat iets heeft plaatsgevonden en wat voor misdaad of ongeval zich daar heeft afgespeeld.'
 
 
 # In[19]:
