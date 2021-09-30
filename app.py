@@ -145,17 +145,17 @@ if male == True and female == True:
 
 
 st.subheader('2. Dropdown')
-'Bij onderstaande grafiek is een dropdown functie toegevoegd. In het menu van de dropdown kan gekozen worden voor één bepaalde staat of alle staten. Wanneer er op een staat geklikt wordt geeft de grafiek de naam van de gezochte persoon aan en hoelang die persoon al op de lijst van de FBI staat.'
+'Bij onderstaande grafiek is een dropdown functie toegevoegd. In het menu van de dropdown kan gekozen worden voor één bepaalde staat of alle staten. Wanneer er op een staat geklikt wordt geeft de grafiek aan welke misdaden er in die staat zijn geweest en hoelang de persoon die gezocht wordt al op de lijst van de FBI staat.'
 
 
-# In[17]:
+# In[21]:
 
 
 #Dropdown
 fig2= go.Figure()
 for state in df['State'].unique():
     df1=df[df.State == state]
-    fig2.add_trace(go.Bar(x=df1['Name'], y=df1['Days_on_List'],  name=state))
+    fig2.add_trace(go.Bar(x=df1['Why on List'], y=df1['Days_on_List'],  name=state))
     
 dropdown_buttons = [
     {'method': 'update', 'label': 'Alle','args': [{'visible': [True, True, True, True, True, True, True, True, True, True, True, True, True]}]},
@@ -175,7 +175,7 @@ dropdown_buttons = [
 fig2.update_layout({'updatemenus':[{'type': 'dropdown', 'buttons': dropdown_buttons}]})
 
 
-fig2.update_layout({'xaxis':{'title':{'text': 'Waarom  Op Lijst'}},
+fig2.update_layout({'xaxis':{'title':{'text': 'Waarom op Lijst'}},
                    'yaxis':{'title':{'text':'Dagen Gezocht'}},
                    'title':{'text':'Aantal Dagen Gezocht per Staat', 'x':0.5}})
 
