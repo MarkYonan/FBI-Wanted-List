@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[25]:
+# In[1]:
 
 
 import pandas as pd 
@@ -21,7 +21,7 @@ df['Days_on_List'] = df['Days_on_List'].astype(int)
 df.info()
 
 
-# In[23]:
+# In[3]:
 
 
 img = Image.open("FBI.png")
@@ -37,11 +37,10 @@ st.title('FBI Wanted List')
 # In[5]:
 
 
-st.subheader('Inleiding')
 'De afgelopen weken is de naam Gabby Petito vaak voorbij gekomen. Gabby Petito is een jonge vrouw van 22 jaar oud. Tijdens een roadtrip met haar vriend is ze vermist geraakt. Na een tijd als vermist persoon kwam op op 19 september 2021 het tragische nieuws dat haar stoffelijk overschot is gevonden in Bridger-Teton National Forest in Wyoming. Omdat dit ons aansprak is er gekeken of er een dataset bestaat in het teken van misdaad. Zo zijn we terecht gekomen bij een dataset van de FBI. De FBI heeft een API vrij gegeven met alle mensen die gezocht worden. Deze personen worden gezocht om verschillende redenen. Denk hierbij aan vermist zijn maar ook het plegen van een moord.'
 
 
-# In[1]:
+# In[6]:
 
 
 'In dit blog wordt gekeken naar mogelijke verbanden tussen de verschillende variabelen van de personen op de lijst van gezochte.'
@@ -50,44 +49,53 @@ st.subheader('Inleiding')
 # In[7]:
 
 
-''
+st.subheader('Code')
+'Bovenaan een code die geschreven wordt is het overzichtelijk om aan te geven welke packages worden gebruikt om de code te laten uitvoeren. Bij het maken van deze blog zijn er zowel packages gebruikt voor het importen als het visualiseren van de data. In onderstaande afbeelding is te zien welke packages gebruikt zijn voor het maken van deze blog.'
 
 
 # In[8]:
 
 
-''
+img2 = Image.open("Packs.png")
+st.image(img2)
 
 
 # In[9]:
+
+
+'Voordat de API van de FBI gebruikt kan worden moet deze geimporteerd worden in python zodat er mee gewerkt kan worden. Het bestand dat wordt binnengehaald zetten we om naar een JSON file . Een JSON file is makkelijker te inspecteren en aan te passen dan het originele bestand. In onderstaande code is te zien hoe de API ingeladen is.'
+
+
+# In[10]:
+
+
+img1 = Image.open("Request.png")
+st.image(img1)
+
+
+# In[11]:
 
 
 st.subheader('Data Frame')
 'In onderstaande tabel is het dataframe te zien die gebruikt wordt voor de analyses. De tabel bestaat uit verschillende variabelen. In de API staan meerdere variabelen die overbodig zijn voor de analyses, deze staan niet in het dataframe. De variabelen die rechtstreeks uit de API komen zijn: "Name",  "Reward in $" en "Publication date". Middels data manipulatie zijn er nog vier variabelen toegevoegd. "Why on list", "Days on list" en "Sex". Dit is gedaan in google met de hand omdat het maar een paar personen zijn. Moord en vermissing zijn de meest voorkomende redenen dat de personen op de lijst staan. De hoeveelheid dagen dat de personen op de lijst staan verschilt. Het varieert tussen twaalf dagen en 4041 dagen. Ook is opvallend dat er meer mannen zijn die een misdaad gepleegd hebben dan vrouwen. Om verbanden en de analyses die gemaakt zijn weer te geven zijn er drie visualisaties gemaakt.'
 
 
-# In[10]:
+# In[12]:
 
 
 st.dataframe(df)
 
 
-# In[11]:
-
-
-''
-
-
 # ## Graphs
 
-# In[12]:
+# In[13]:
 
 
 st.subheader('1. Checkbox')
 'De checkbox heeft de mogelijkheid om aan te geven in hoeveel van de zaken de persoon in kwestie een man of een vrouw is. Door bijvoorbeeld op "Vrouw" klikken krijgt u een overzicht van de gevallen waar een vrouw de persoon in kwestie is.'
 
 
-# In[13]:
+# In[14]:
 
 
 #Checkboxes
@@ -111,7 +119,7 @@ fig_female.update_layout({'xaxis':{'title':{'text': 'Naam'}},
                             'x':0.5}})
 
 
-# In[14]:
+# In[15]:
 
 
 #Checkboxes
@@ -132,12 +140,6 @@ if male == True and female == True:
 
 
 # #### ---
-
-# In[15]:
-
-
-''
-
 
 # In[16]:
 
@@ -188,17 +190,11 @@ st.plotly_chart(fig2)
 # In[18]:
 
 
-''
-
-
-# In[19]:
-
-
 st.subheader('3. Slider')
 'Een slider heeft de functie om op een bepaalde variabele geselecteerde waardes weer te geven. De slider in onderstaande grafiek geeft per geselecteerd jaar aan in welke staat het heeft plaatsgevonden en wat voor misdaad of ongeval zich daar heeft afgespeeld.'
 
 
-# In[20]:
+# In[19]:
 
 
 #Sliders
@@ -231,13 +227,7 @@ st.plotly_chart(fig3)
 
 # #### ---
 
-# In[21]:
-
-
-''
-
-
-# In[22]:
+# In[20]:
 
 
 st.subheader('Conclusie')
