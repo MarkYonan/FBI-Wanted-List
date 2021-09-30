@@ -21,7 +21,7 @@ df['Days_on_List'] = df['Days_on_List'].astype(int)
 df.info()
 
 
-# In[3]:
+# In[22]:
 
 
 img = Image.open("FBI.png")
@@ -56,8 +56,14 @@ st.subheader('Code')
 # In[8]:
 
 
-img2 = Image.open("Packs.png")
-st.image(img2)
+with st.echo():
+    import requests
+    import json
+    import pandas as pd 
+    import plotly.express as px
+    import streamlit as st
+    import plotly.graph_objects as go
+    from PIL import Image
 
 
 # In[9]:
@@ -69,8 +75,9 @@ st.image(img2)
 # In[10]:
 
 
-img1 = Image.open("Request.png")
-st.image(img1)
+with st.echo():
+    response = requests.get('https://api.fbi.gov/wanted/v1/list')
+    wanted = response.json()
 
 
 # In[11]:
@@ -148,7 +155,7 @@ st.subheader('2. Dropdown')
 'Bij onderstaande grafiek is een dropdown functie toegevoegd. In het menu van de dropdown kan gekozen worden voor één bepaalde staat of alle staten. Wanneer er op een staat geklikt wordt geeft de grafiek aan welke misdaden er in die staat zijn geweest en hoelang de persoon die gezocht wordt al op de lijst van de FBI staat.'
 
 
-# In[21]:
+# In[17]:
 
 
 #Dropdown
@@ -232,4 +239,14 @@ st.plotly_chart(fig3)
 
 st.subheader('Conclusie')
 'Uit de verschillende analyses en verbanden die onderzocht zijn kan eigenlijk geen conclusie getrokken worden. Voordat gestart werd aan dit onderzoek werd verwacht dat er verbanden konden zijn tussen de reward en de tijd dat een persoon op de lijst staat. Echter zit hier helaas geen verband in. Bij het maken van de visualisaties zijn ook geen verbanden gevonden. Zo zit er geen verband in wat voor misdaad per staat heeft plaatsgevonden of tussen de misdaad en de tijd op de lijst. In de tweede grafiek is wel te zien dat voor een misdaad zoals moord of kidnapping mensen langer op de lijst staan. Dit kan dan komen omdat deze mensen gevlucht zijn, aangezien er een hoge straf op ze staat te wachten. De FBI blijft natuurlijk doorzoeken omdat dit ernstige misdrijven zijn. Door het gebrek aan data kunnen we deze conclusie echter niet bevestigen omdat we niet weten of er een relatie zit of dat dit toeval is.'
+
+
+# In[21]:
+
+
+st.sidebar.subheader('Gemaakt Door:')
+st.sidebar.write('• Mara van Boeckel')
+st.sidebar.write('• Aniska Sinnige')
+st.sidebar.write('• Maarten van der Veer')
+st.sidebar.write('• Mark Yonan')
 
