@@ -171,13 +171,14 @@ dropdown_buttons = [
     {'method': 'update', 'label': 'New York','args': [{'visible': [False, True, False, False, False, False, False, False, False, False, False, False, False]}]}, 
     {'method': 'update', 'label': 'New Mexico','args': [{'visible': [False, False, True, False, False, False, False, False, False, False, False, False, False]}]},
     {'method': 'update', 'label': 'California','args': [{'visible': [False, False, False, True, False, False, False, False, False, False, False, False, False]}]}, 
-    {'method': 'update', 'label': 'Missouri','args': [{'visible': [False, False, False, False, True, False, False, False, False, False, False, False, False]}]}, 
-    {'method': 'update', 'label': 'New Jersey','args': [{'visible': [False, False, False, False, False, True, False, False, False, False, False, False, False]}]},
-    {'method': 'update', 'label': 'Montana','args': [{'visible': [False, False, False, False, False, False, True, False, False, False, False, False, False]}]}, 
-    {'method': 'update', 'label': 'Washington','args': [{'visible': [False, False, False, False, False, False, False, True, False, False, False, False, False]}]}, 
-    {'method': 'update', 'label': 'Illinois','args': [{'visible': [False, False, False, False, False, False, False, False, True, False, False, False, False]}]}, 
-    {'method': 'update', 'label': 'North Carolina','args': [{'visible': [False, False, False, False, False, False, False, False, False, True, False, False, False]}]}, 
-    {'method': 'update', 'label': 'Oregon','args': [{'visible': [False, False, False, False, False, False, False, False, False, False, True, False, False]}]}, 
+    {'method': 'update', 'label': 'Wyoming','args': [{'visible': [False, False, False, False, True, False, False, False, False, False, False, False, False]}]}, 
+    {'method': 'update', 'label': 'Missouri','args': [{'visible': [False, False, False, False, False, True, False, False, False, False, False, False, False]}]}, 
+    {'method': 'update', 'label': 'New Jersey','args': [{'visible': [False, False, False, False, False, False, True, False, False, False, False, False, False]}]},
+    {'method': 'update', 'label': 'Montana','args': [{'visible': [False, False, False, False, False, False, False, True, False, False, False, False, False]}]}, 
+    {'method': 'update', 'label': 'Washington','args': [{'visible': [False, False, False, False, False, False, False, False, True, False, False, False, False]}]}, 
+    {'method': 'update', 'label': 'Illinois','args': [{'visible': [False, False, False, False, False, False, False, False, False, True, False, False, False]}]}, 
+    {'method': 'update', 'label': 'North Carolina','args': [{'visible': [False, False, False, False, False, False, False, False, False, False, True, False, False]}]}, 
+    {'method': 'update', 'label': 'Oregon','args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, True, False]}]}, 
     {'method': 'update', 'label': 'Wisconsin','args': [{'visible': [False, False, False, False, False, False, False, False, False, False, False, False, True]}]}]
 
 fig2.update_layout({'updatemenus':[{'type': 'dropdown', 'buttons': dropdown_buttons}]})
